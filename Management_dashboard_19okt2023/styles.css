@@ -11,6 +11,7 @@
 
 :root {
     --color-gradient: linear-gradient(125deg, rgba(75, 73, 231, 1) 0%, rgba(88, 33, 205, 1) 100%);
+    --color-gradient-blue: linear-gradient(90deg, #3856E4 18.18%, #73A3FF 69.19%);
     --color-white: rgb(255, 255, 255);
     --color-black: #343434;
     --color-light-blue: #ebf3f8;
@@ -297,8 +298,8 @@ article{
 
 .progress-bar{
     height: 100%;
-    width: attr(data-progress);
-    background: blue;
+    /*width wordt gedaan in JS*/
+    background: var(--color-gradient-blue);
     border-radius: 10px;
 }
 
