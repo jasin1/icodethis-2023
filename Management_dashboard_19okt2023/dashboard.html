@@ -37,8 +37,10 @@
         <form action="">
             <header>
                 <div class="search-wrapper">
-
-                    <label for="search"><input type="text" name="" id="search" placeholder="Search"></label>
+                    <div class="search-field">
+                        <div class="search-glass-wrapper"><img src="_assets/icon-search.svg" alt=""></div>
+                        <label for="search"><input type="text" name="" id="search" placeholder="Search"></label>
+                    </div>
                 </div>
                 <div class="header-side">
                     <div class="icons-wrapper">
@@ -62,20 +64,58 @@
                         <div class="heading-wrapper">
                             <h2>Recent Folders</h2>
                         </div>
-                        <div class="box-wrapper">
-                            <div class="box"></div>
-                            <div class="box"></div>
+                        <div class="box-wrapper folders">
+                            <div class="box box-small">
+                                <div class="image-wrapper icon-big">
+                                    <img src="_assets/big-folder.svg" alt="">
+                                </div>
+                                <p>Invoices</p>
+                            </div>
+                            <div class="box box-small">
+                                <div class="image-wrapper icon-big">
+                                    <img src="_assets/big-folder.svg" alt="">
+                                </div>
+                                <p>Customers</p>
+                            </div>
                         </div>
                     </div>
                     <div class="content">
                         <div class="heading-wrapper">
                             <h2>Projects</h2>
                         </div>
-                        <div class="box-wrapper">
-                            <div class="box"></div>
-                            <div class="box"></div>
-                            <div class="box"></div>
-                            <div class="box"></div>
+                        <div class="box-wrapper box-grid">
+                            <div class="box">
+                                <div class="project-content before-purple shared-style" data-letter="S">
+                                    <p>Sintex</p>
+                                    <div class="project-length">
+                                        <div class="progress-bar" data-progress="50"></div>
+                                    </div>
+                                    <span class="project-metrics">26/47</span>
+                                </div>
+                            </div>
+                            <div class="box">
+
+                                <div class="project-content before-red shared-style" data-letter="T">
+                                    <p>Tetrion</p>
+                                    <div class="project-length">
+                                        <div class="progress-bar" data-progress="30"></div>
+                                    </div>
+                                    <span class="project-metrics">7/21</span>
+                                </div>
+                            </div>
+                            <div class="box">
+
+                                <div class="project-content before-green shared-style" data-letter="P">
+                                    <p>Petron</p>
+                                    <div class="project-length">
+                                        <div class="progress-bar" data-progress="90"></div>
+                                    </div>
+                                    <span class="project-metrics">14/16</span>
+                                </div>
+                            </div>
+                            <div class="box box-empty">
+
+                            </div>
                         </div>
                     </div>
                 </div>

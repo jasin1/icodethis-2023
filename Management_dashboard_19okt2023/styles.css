@@ -13,7 +13,7 @@
     --color-gradient: linear-gradient(125deg, rgba(75, 73, 231, 1) 0%, rgba(88, 33, 205, 1) 100%);
     --color-white: rgb(255, 255, 255);
     --color-black: #343434;
-    --color-light-blue: #F3F9FE;
+    --color-light-blue: #ebf3f8;
     --color-red: #FF605E;
     --color-green: #93C041;
     --color-purple: #9362F6;
@@ -63,9 +63,19 @@ img{
 }
 /* ------------------------------- Typography -------------------------------- */
 
+h1, h2, h3, p, time{
+    padding: 0;
+}
+
 h1{
     font-size: 3rem;
     font-weight: 800;
+}
+
+h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
 /* ------------------------------- Aside -------------------------------- */
@@ -78,11 +88,16 @@ aside{
     padding: 1.5rem 2.5rem;
 }
 
+li{
+    padding: 1rem 2rem;
+    /*background-color: var(--color-light-blue);*/
+    border-radius: 100px;
+}
+
 li a{
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 1rem;
 }
 
 .img-wrapper{
@@ -107,14 +122,40 @@ header{
     border-bottom: 1px solid var(--color-grey);
 }
 
+.search-wrapper{
+
+}
+
+.search-field{
+    border: 1px solid #e0e0e0;
+    border-radius: 40px;
+    padding: 0 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.search-glass-wrapper{
+    width: 18px;
+    height: 18px;
+}
+
+#search{
+    padding: 1rem;
+    width: 16rem;
+    border: none;
+    font-size: 1rem;
+}
+
 .header-side{
     display: flex;
     gap: 3rem;
+    /*border: 1px solid #9362F6;*/
 }
 
 .icons-wrapper{
     display: flex;
     gap: 1.5rem;
+    padding-top: 1rem;
 }
 
 .time-wrapper{
@@ -122,4 +163,149 @@ header{
     flex-direction: column;
 }
 
+#current-time{
+    font-size: 2.5rem;
+}
+
 /* ------------------------------- article -------------------------------- */
+
+article{
+    display: flex;
+    padding: 2rem 0;
+    gap: 2rem;
+}
+
+.content-wrapper{
+    flex-grow: 1;
+    /*border-right: 1px solid red;*/
+}
+
+
+
+.box-wrapper{
+    display: flex;
+    gap: 1rem;
+}
+
+.folders{
+    margin-bottom: 6rem;
+}
+
+.box{
+    padding: 1.5rem;
+    background-color: var(--color-light-blue);
+    border-radius: .5rem;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box p{
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.icon-big{
+    width: 56px;
+    height: 64px;
+}
+
+.box-grid .box{
+    /*width: 100%;*/
+    /*padding: 0;*/
+    padding: 2rem 2rem 2rem 4rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    /*min-width: 200px;*/
+}
+
+.one-letter{
+    padding: .5rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    background-color: var(--color-white);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-content{
+    width: 100%;
+    /*border: 1px solid black;*/
+    position: relative;
+}
+
+.project-content p{
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.project-metrics{
+    font-size: .8rem;
+    font-weight: 400;
+    margin: 0;
+    /*color: red;*/
+}
+
+.before-purple::before {
+    color: var(--color-purple);
+}
+
+.before-red::before {
+    color: var(--color-red);
+}
+
+.before-green::before {
+    color: var(--color-green);
+}
+
+
+
+.shared-style::before{
+    content: attr(data-letter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    /*line-height: 1.5rem;*/
+    font-size: 1.2rem;
+    font-weight: 800;
+    position: absolute;
+    left: -2.5rem;
+    top: -.2rem;
+}
+
+.project-length{
+    background-color: var(--color-white);
+    height: .4rem;
+    width: 100%;
+    margin-bottom: .8rem;
+    border-radius: 10px;
+}
+
+.progress-bar{
+    height: 100%;
+    width: attr(data-progress);
+    background: blue;
+    border-radius: 10px;
+}
+
+.box-grid{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: repeat(2, 1fr); /* Two rows */
+    gap: .5rem; /* Adjust the gap as needed */
+}
