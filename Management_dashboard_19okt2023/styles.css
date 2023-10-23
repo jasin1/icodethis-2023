@@ -310,3 +310,19 @@ article{
     grid-template-rows: repeat(2, 1fr); /* Two rows */
     gap: .5rem; /* Adjust the gap as needed */
 }
+
+
+/* ------------------------------- Tasks -------------------------------- */
+
+.content-tasks{
+    background: var(--color-light-blue);
+    padding: 2rem;
+    border-radius: .6rem;
+}
+
+.tasks-wrapper{
+    background: var(--color-white);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: .3rem;
+}
