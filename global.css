@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: white;
+    --color-black: black;
+    --color-light-grey: #EDF1F4;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}

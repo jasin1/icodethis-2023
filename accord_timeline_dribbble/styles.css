@@ -1,0 +1,193 @@
+/* ------------------------------- Global Styles staan in global.css -------------------------------- */
+
+
+/* --------------- 1. local Styles ------------------ */
+
+:root {
+    --color-bg: #F6F9FF;
+    --color-inside-bg: #E9F1FC;
+    --color-border-light: #EDF4FC;
+    --color-green: #35B288;
+    --color-font-main: #192533;
+    --color-font-second: #6B7FA0;
+    --color-red: #D25050;
+}
+
+body{
+    background: var(--color-bg);
+}
+
+main{
+    /*height: 100vh;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+section{
+    background: var(--color-white);
+    border: 1px solid var(--color-border-light);
+    width: 95%;
+}
+
+/* --------------- 2. Header ------------------ */
+header{
+    padding: 2rem;
+    border-bottom: 1px solid var(--color-border-light);
+    margin-bottom: 1rem
+}
+
+h1{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* --------------- 3. timeline wrapper ------------------ */
+
+.timeline-wrapper{
+    padding: 1rem 3rem;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 8rem;
+}
+
+.timeline-bg{
+    position: absolute;
+    top:39%;
+    left: 90px;
+    right: 80px;
+    height: 1rem;
+    background: var(--color-border-light);
+    z-index: 1;
+}
+
+.timeline-fill{
+    background: var(--color-green);
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+}
+
+
+
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid black;*/
+    position: relative;
+    z-index: 2;
+}
+
+li{
+    /*border: 6px solid maroon;*/
+
+
+}
+
+.eval-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+time{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color-font-main);
+    margin-bottom: 1rem;
+}
+
+.eval-check{
+    background: var(--color-border-light);
+    /*border: 5px solid var(--color-border-light);*/
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li:first-child .eval-check {
+    background: var(--color-white);
+    filter: drop-shadow(0px 4px 4px rgba(214, 222, 234, 0.85));
+    width: 64px;
+    height: 64px;
+    margin-top: -.6rem;
+}
+
+
+
+
+.eval-check-inside{
+    position: relative;
+    background: var(--color-white);
+    width: 75%;
+    height: 75%;
+    border-radius: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(214, 222, 234, 0.85));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green{
+    background: var(--color-green);
+    width: 80%;
+    height: 80%;
+}
+
+/*.eval-check-inside:before{*/
+/*    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 18 13" fill="none"><path d="M18 2.46043L9.74541 10.5396L7.24113 13L4.7295 10.5396L0 5.90648L2.51163 3.44604L7.24113 8.07914L15.4884 0L18 2.46043Z" fill="%23231F20"/></svg>');*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*}*/
+
+
+
+
+
+.eval-name{
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-font-main);
+    margin-bottom: .5rem;
+}
+
+.eval-sub{
+    font-size: .8rem;
+    text-align: center;
+    color: var(--color-font-second);
+    max-width: 120px;
+}
+
+
+/* --------------- 4. Footer ------------------ */
+
+footer{
+    padding: 3rem;
+}
+
+.counter-wrapper{
+    border-top: 1px solid #d9e2ff;
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+}
+
+footer p{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.time-img-wrapper{
+    margin-right: .5rem;
+}
