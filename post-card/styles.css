@@ -1,0 +1,71 @@
+/* ------------------------------- Global Styles staan in global.css -------------------------------- */
+
+
+/* --------------- 1. local Styles ------------------ */
+
+:root {
+    --color-bg: #ABB0B1;
+    --color-inside-bg: #36474E;
+    --color-font-main: #ffffff;
+    --color-font-second: #A7B6BC;
+    --color-red: #FF3D7F;
+}
+
+body{
+    background: var(--color-bg);
+    color: var(--color-font-main);
+    font-size: 16px;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.container{
+    background: var(--color-inside-bg);
+    padding: 2rem;
+    max-width: 400px;
+}
+
+.img-wrapper{
+    margin-bottom: 1rem;
+    /*width: 244px;*/
+    /*height: 174px;*/
+}
+
+h1{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+span, time{
+    font-size: .8rem;
+}
+
+.avatar-wrapper{
+    margin-bottom: .8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+section{
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+/* --------------- 4. Footer ------------------ */
+
+.socials-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-container{
+    display: flex;
+}

@@ -168,6 +168,9 @@ li:first-child .eval-check {
     max-width: 120px;
 }
 
+.check-mark-svg{
+    /*fill: var(--color-green);*/
+}
 
 /* --------------- 4. Footer ------------------ */
 
@@ -191,3 +194,4 @@ footer p{
 .time-img-wrapper{
     margin-right: .5rem;
 }
+
